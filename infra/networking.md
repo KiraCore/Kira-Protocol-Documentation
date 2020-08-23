@@ -42,13 +42,13 @@ The maximum number of validators that can be locally deployed is `254`
 #### Exposed Ports
 * `26656` - P2P, enables validators/peers to communicate, e.g. propagate blocks 
 * `10001` - RPC allows to query the blockchain state, submit transactions and control the peer
-* `10002` - LCD, RPC equivalent used for automated management 
+* `10004` - gRPC
 
 To verify that the validator is accessible you can query the state with one of the following curl command:
 
 ```
 curl 101.1.0.X:10001/status
-curl 101.1.0.X:10002/node_info
+grpcurl -plaintext 101.1.0.X:10004 list
 ```
 
 ## Known Issues

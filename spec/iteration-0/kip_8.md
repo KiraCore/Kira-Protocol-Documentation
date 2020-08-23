@@ -31,7 +31,11 @@ All responses from the `INTERX` service should have a following json format:
 }
 ```
 
-References: https://github.com/grpc-ecosystem/grpc-gateway
+References: 
+* Tendermint RPC: https://docs.tendermint.com/master/rpc/#/ABCI/abci_info
+* gRPC Gateway: https://github.com/grpc-ecosystem/grpc-gateway
+* gRPC queries on the bank module (TS): [cosmjs-stargate](https://github.com/CosmWasm/cosmjs/blob/master/packages/stargate/src/queries/bank.spec.ts#L59-L186
+)
 
 ## Response Signing
 
