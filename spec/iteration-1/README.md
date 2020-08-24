@@ -20,7 +20,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
      * :x: :new_moon: [:bookmark:KIP_24] Upsert Token Alias (Proposal)
    * :zap: Consensus
      * :x: :full_moon: [[:bookmark:KIP_25]](kip_25.md) Curated Validator Set
-     * :x: :full_moon: [[:bookmark:KIP_26]](kip_26.md) Claim Validator Seat  
+     * :pick: :full_moon: [[:bookmark:KIP_26]](kip_26.md) Claim Validator Seat  
 2. :globe_with_meridians: **[REST Server / JSON RPC](../rpc/README.md)**
    * :zap: Queries 
       * :x: :full_moon: [[:bookmark:KIP_27]](KIP_27.md) List Network Actors & Permissions

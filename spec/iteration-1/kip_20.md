@@ -20,7 +20,8 @@ Kira proposals, which can be created by governance actors, can be passed, reject
 * Only network actors with `councilor` type can vote on proposals (Governance actors).
 * Governance actor can only vote on the specific proposal if he/she has assigned  `permissions` that allow this specific actor to vote on that specific proposal
 * Governance actor can only vote on proposal if he/she is `active`
-* Governance actor can only vote on proposal using `4` individually assigned vote types: `yes`, `abstain`, `no` or `veto`
+* Governance actor can only vote on proposal using `4` vote types: `yes`, `abstain`, `no` or `veto`
+* Network actors with different roles (or permissions) might have ability to cast only certain vote types (e.g. validators might be able to cast veto but other councilors not)
 * Proposal is **passed** only if MORE then `1/2` (>50%) of all votes were `yes` votes and quorum of MORE then `1/3` (>33%) of all actors that have active status and permissions to vote on a specific proposal was reached
 * Proposal is **rejected** if votes of type different then `yes` sum to MORE or EQUAL to `1/2` (>=50%) of all votes
 * Proposal is **rejected** if MORE or EQUAL to `1/2` (>=50%) of actors who posses veto privileges vote `veto` (minority with veto power can reject a proposal)
@@ -88,6 +89,8 @@ A list of unsigned integers describing vote types that network actor can cast on
 _NOTE: Casting vote multiple times overrides previous vote_
 
 _NOTE: Individual proposals might define individual sub-set of vote types that can be casted_
+
+_NOTE: Instead of defining `votes` we can replace that logic with permissions such as `vote yes`, `vote no` etc._
 
 ### Permissions
 

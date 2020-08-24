@@ -16,6 +16,7 @@ Kira consensus must progress according to following rules:
 * Blocks should contain UNIX Nano UTC timestamps
 * Two blocks should not have timestamps separated by less then 500 milliseconds (no full node or validator should accept or propagate such block)
 * Blocks should be produced even if they are empty
+* It should not be possible to produce two non-consecutive blocks (no block skipping)
 
 ## Inactive Operators
 

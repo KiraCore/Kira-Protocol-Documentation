@@ -15,8 +15,8 @@ The signer app milestones consist of series of task containing statuses such as 
 To learn more about branches and development process, see [versioning](../versioning.md) documentation.
 
 
-* :x: [[:bookmark:SIP_1]](sip_1.md) JS Mock Library
-
+* :pick: [[:bookmark:SIP_1]](sip_1.md) JS Mock Library
+* :x: [[:bookmark:SIP_2]](sip_2.md) PGP Signature
 
 
 
