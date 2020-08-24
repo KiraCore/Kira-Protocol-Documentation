@@ -11,3 +11,4 @@ Main goal of this task is to showcase a simplest case of message signing and ver
 4. Generate QR code gif on the mobile device containing signed key and enable web-app to read it
 5. Verify the signature on the web-app (web app must be made aware of the public key)
 
+_NOTE: In this improvement proposals we should achieve functionality comparable to https://keybase.io/sign & https://keybase.io/verify_
