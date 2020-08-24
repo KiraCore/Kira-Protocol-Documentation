@@ -39,7 +39,6 @@ _NOTE: Permissions blacklist should at all times have priority over the whitelis
     "address": <string>
     "roles": [ <uint>, ... ],
     "status": <byte>,
-    "votes": [ <byte>, ... ],
     "permissions: {
         "blacklist": [ <uint16>, ... ],
         "whitelist": [ <uint16>, ... ]
@@ -76,21 +75,18 @@ An unsigned integer describing state of the network actor role. **Active** statu
 
 _NOTE: Network actor can have only a single status type assigned_
 
-### Votes
+### Vote Types
 
-A list of unsigned integers describing vote types that network actor can cast on proposals while having an active councilor role.
+Vote types can be treated the same way as permissions that can be assigned to specific role or individual account actor. 
 
-* `undefined` - 0x01
-* `abstain` - 0x02
-* `yes` - 0x03
-* `no` - 0x04
-* `veto` -  0x05
+* `abstain`
+* `yes`
+* `no` 
+* `veto`
 
 _NOTE: Casting vote multiple times overrides previous vote_
 
 _NOTE: Individual proposals might define individual sub-set of vote types that can be casted_
-
-_NOTE: Instead of defining `votes` we can replace that logic with permissions such as `vote yes`, `vote no` etc._
 
 ### Permissions
 

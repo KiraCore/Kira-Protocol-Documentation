@@ -16,7 +16,6 @@ Every response of the `query_network_actors` command should be a JSON array of t
     "address": <string>
     "roles": [ <uint>, ... ],
     "status": <uint>,
-    "votes": [ <byte>, ... ],
     "permissions: {
         "blacklist": [ <uint16>, ... ],
         "whitelist": [ <uint16>, ... ]
