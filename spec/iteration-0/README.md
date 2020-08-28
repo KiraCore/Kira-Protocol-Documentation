@@ -20,20 +20,20 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
      * :pick: :full_moon: [[:bookmark:KIP_2]](kip_2.md) Place Order
      * :pick: :full_moon: [[:bookmark:KIP_3]](kip_3.md) Cancel Order
    * :zap: Key Management
-     * :x: :new_moon: [[:bookmark:KIP_4]](kip_4.md) Upsert Signer Key
+     * :pick: :new_moon: [[:bookmark:KIP_4]](kip_4.md) Upsert Signer Key
   
 2. :globe_with_meridians: **[REST Server / JSON RPC](../rpc/README.md)**
    * :zap: Queries 
       * :pick: :full_moon: [[:bookmark:KIP_5]](kip_5.md) List Order Books
       * :pick: :full_moon: [[:bookmark:KIP_6]](kip_6.md) List Orders
-      * :x: :new_moon: [[:bookmark:KIP_7]](kip_7.md) List Signer Keys
+      * :pick: :new_moon: [[:bookmark:KIP_7]](kip_7.md) List Signer Keys
    * :zap: Security
       * :x: :new_moon: [[:bookmark:KIP_8]](kip_8.md) Response Signing & Proxy
       * :x: :new_moon: [[:bookmark:KIP_9]](kip_9.md) Endpoints Whitelist
   
 3. :computer: **Web User Interface** (Static Page)
    * :zap: Account Management
-      * :x: :full_moon: [[:bookmark:KIP_10]](kip_10.md) Network Setup & Login
+      * :pick: :full_moon: [[:bookmark:KIP_10]](kip_10.md) Network Setup & Login
       * :x: :full_moon: [[:bookmark:KIP_11]](kip_11.md) Token Balances
       * :x: :full_moon: [[:bookmark:KIP_12]](kip_12.md) Token Transfers
       * :x: :new_moon: [:bookmark:KIP_13] Trusted Signatures (Whitelist)

@@ -13,13 +13,13 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
 
 1. :link: **Blockchain Application**
    * :zap: Governance
-     * :x: :full_moon: [[:bookmark:KIP_20]](kip_20.md) Curated Governance Set
-     * :x: :full_moon: [[:bookmark:KIP_21]](kip_21.md) Claim Governance Seat
+     * :pick: :full_moon: [[:bookmark:KIP_20]](kip_20.md) Curated Governance Set
+     * :pick: :full_moon: [[:bookmark:KIP_21]](kip_21.md) Claim Governance Seat
      * :x: :full_moon: [[:bookmark:KIP_22]](kip_22.md) Upsert Network Actor (Proposal)
-     * :x: :new_moon: [:bookmark:KIP_23] Amend Code of Conduct (Proposal)
-     * :x: :new_moon: [:bookmark:KIP_24] Upsert Token Alias (Proposal)
+     * :x: :new_moon: [[:bookmark:KIP_23]](kip_23.md) Upsert Code of Conduct (Proposal)
+     * :x: :new_moon: [[:bookmark:KIP_24]](kip_23.md) Upsert Token Alias (Proposal)
    * :zap: Consensus
-     * :x: :full_moon: [[:bookmark:KIP_25]](kip_25.md) Curated Validator Set
+     * :pick: :full_moon: [[:bookmark:KIP_25]](kip_25.md) Curated Validator Set
      * :pick: :full_moon: [[:bookmark:KIP_26]](kip_26.md) Claim Validator Seat  
 2. :globe_with_meridians: **[REST Server / JSON RPC](../rpc/README.md)**
    * :zap: Queries 
@@ -57,7 +57,7 @@ _This map defines order in which tasks must be executed to fulfill goals of the 
 
 The main goal of `Iteration 1` is to deploy a minimum viable public testnet with a validator and governance set permissioining.
 
-### Visualization 
+### Network Actor Permissioining 
 
 ![picture 2](https://i.imgur.com/28ONnVW.png)  
 
