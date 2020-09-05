@@ -23,13 +23,16 @@ All responses from the `INTERX` service should have a following json format:
 
 ```
 {
-    "chain-id",              // Chain/Network Identifier
+    "chain-id": <string>,    // Chain/Network Identifier
     "block": <UInt64>,       // Block number
-    "timestamp": <UInt64>,   // UTC Unix Timestamp
+    "block_time": <UInt64>,  // Block Time
+    "timestamp": <UInt128>,  // UTC UNIX Timestamp
     "response": {Object},    // Response Object
     "error": {Object},       // Null or Object if exception was thrown
 }
 ```
+
+In case where exception is thrown appropriate code 500 with error object should be supplied. If there is no exception the error field should not be present.
 
 References: 
 * Tendermint RPC: https://docs.tendermint.com/master/rpc/#/ABCI/abci_info
@@ -39,11 +42,20 @@ References:
 
 ## Response Signing
 
-Once minimal viable functionality of the proxy service is achieved we need to extend its functionality and add ability to sign responses so tat client application can verify their integrity.
+Once minimal viable functionality of the proxy service is achieved we need to extend its functionality and add ability to sign responses so that client application can verify their integrity. Every single endpoint with exception for INTERX related endpoints should contain a signature.
 
-When the JSON response is created all fields such as `chain-id`, `block`, `timestamp`,`response`,`error` should be signed. Once signature is created a new field called `signature` should be added to the json.
+When the JSON response is created fields `chain-id`, `block`, `block_time`, `timestamp` and `response` should be signed where `response` should be replaced with BLAKE2 hash before the signature is generated. Once signature is created a new fields called `signature` and `hash` should be added to the json.
 
-_NOTE: The JSON must be minimized before signature is created for the purpose of cross-platform compatibility_
+Signing algorithm used should be `sr25519` 
+
+### Example Message Ready To be Signed
+
+```
+{"chain-id":"kira-1","block":12345,"block_time":231987654321,"timestamp":  231987654323,"response":"0x123456789234567812345678"}
+```
+Reason to hash the response before signing is to ensure that it is easy to verify the misbehavior of full node operators on-chain, without need to submit large evidence message.
+
+_NOTE: The response that is hashed as well as entire JSON must be minimized before signature is created for the purpose of cross-platform compatibility_
 
 ## Response Verification
 

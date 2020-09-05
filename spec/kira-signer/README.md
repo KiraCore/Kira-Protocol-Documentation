@@ -16,8 +16,8 @@ To learn more about branches and development process, see [versioning](../versio
 
 
 * :pick: [[:bookmark:SIP_1]](sip_1.md) JS Mock Library
-* :x: [[:bookmark:SIP_2]](sip_2.md) PGP Signature
-
+* :pick: [[:bookmark:SIP_2]](sip_2.md) PGP Signature
+* :x: [:bookmark:SIP_3] Kira Login
 
 
 

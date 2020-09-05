@@ -17,6 +17,7 @@ Every response of the `query_signer_keys` command should be a JSON array contain
         "type": "ed25519",
         "expires": 1591387535,
         "enabled": True,
+        "data": "{\"node-id\":\"XXXXXXXXXXXXX\", \"address\":\"0.0.0.0\", \"info\":\"full-node-1\"}"
         "permissions": [123,456,5678,...],
     }, { ... }, ...
 ]

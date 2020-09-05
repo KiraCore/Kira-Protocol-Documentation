@@ -9,6 +9,7 @@ To submit `upsert_signer_key` transaction following properties are required:
 * `type` - Key type enum (e.g. `secp256k1`, `ed25519`)
 * `expires` - UTC time (`8 Bytes`) when key expires
 * `enabled` - boolean field defining if key is use
+* `data` - defines information related to the key e.g. json string or memo indicating use case (`4096 characters` max)
 * `permissions` - array of integers defining permissions that the owner assigned to the key (this field does not have to be used in PoC)
 
 _NOTE: When new key is added all expired keys of the user should be removed from the state to save storage space, for this reason we need to create index that will help us quickly identify keys belonging to specific user._

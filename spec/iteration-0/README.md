@@ -28,7 +28,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
       * :pick: :full_moon: [[:bookmark:KIP_6]](kip_6.md) List Orders
       * :pick: :new_moon: [[:bookmark:KIP_7]](kip_7.md) List Signer Keys
    * :zap: Security
-      * :x: :new_moon: [[:bookmark:KIP_8]](kip_8.md) Response Signing & Proxy
+      * :pick: :new_moon: [[:bookmark:KIP_8]](kip_8.md) Response Signing & Proxy
       * :x: :new_moon: [[:bookmark:KIP_9]](kip_9.md) Endpoints Whitelist
   
 3. :computer: **Web User Interface** (Static Page)
@@ -36,7 +36,6 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
       * :pick: :full_moon: [[:bookmark:KIP_10]](kip_10.md) Network Setup & Login
       * :x: :full_moon: [[:bookmark:KIP_11]](kip_11.md) Token Balances
       * :x: :full_moon: [[:bookmark:KIP_12]](kip_12.md) Token Transfers
-      * :x: :new_moon: [:bookmark:KIP_13] Trusted Signatures (Whitelist)
    * :x: Order Book Management
       * :x: :full_moon: [:bookmark:KIP_14] Select & Preview Order Books
       * :x: :full_moon: [:bookmark:KIP_15] Place & Cancel Orders
@@ -46,7 +45,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
       * :x: :new_moon: [:bookmark:KIP_17] List Validator 
       * :x: :new_moon: [:bookmark:KIP_18] List Registered Signer Keys 
    * :zap: Security
-      * :x: :new_moon: [:bookmark:KIP_19] Signer Key Verification
+      * :x: :new_moon: [[:bookmark:KIP_13]](kip_13.md) Trusted Signatures
 
 ### Dependency Map
 
