@@ -23,7 +23,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
      * :pick: :full_moon: [[:bookmark:KIP_26]](kip_26.md) Claim Validator Seat
    * :zap: Security
      * :x: :full_moon: [[:bookmark:KIP_44]](kip_44.md) Transaction Fee
-     * :x: :full_moon: [:bookmark:KIP_45] Execution Fees
+     * :x: :full_moon: [[:bookmark:KIP_45]](kip_45.md) Execution Fees
 2. :globe_with_meridians: **[REST Server / JSON RPC](../rpc/README.md)**
    * :zap: Queries 
       * :x: :full_moon: [[:bookmark:KIP_27]](KIP_27.md) List Network Actors & Permissions
