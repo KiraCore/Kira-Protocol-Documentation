@@ -13,7 +13,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
 
 1. :link: **Blockchain Application**
    * :zap: Governance
-     * :pick: :full_moon: [[:bookmark:KIP_20]](kip_20.md) Curated Governance Set
+     * :white_check_mark: :full_moon: [[:bookmark:KIP_20]](kip_20.md) Curated Governance Set
      * :pick: :full_moon: [[:bookmark:KIP_21]](kip_21.md) Claim Governance Seat
      * :x: :full_moon: [[:bookmark:KIP_22]](kip_22.md) Upsert Network Actor (Proposal)
      * :x: :new_moon: [[:bookmark:KIP_23]](kip_23.md) Upsert Code of Conduct (Proposal)
@@ -24,6 +24,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
    * :zap: Security
      * :x: :full_moon: [[:bookmark:KIP_44]](kip_44.md) Transaction Fee
      * :x: :full_moon: [[:bookmark:KIP_45]](kip_45.md) Execution Fees
+     * :x: :full_moon: [[:bookmark:KIP_46]](kip_46.md) Parameterized Permissions 
 2. :globe_with_meridians: **[REST Server / JSON RPC](../rpc/README.md)**
    * :zap: Queries 
       * :x: :full_moon: [[:bookmark:KIP_27]](KIP_27.md) List Network Actors & Permissions
