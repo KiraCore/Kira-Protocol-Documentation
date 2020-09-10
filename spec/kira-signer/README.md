@@ -15,9 +15,10 @@ The signer app milestones consist of series of task containing statuses such as 
 To learn more about branches and development process, see [versioning](../versioning.md) documentation.
 
 
-* :pick: [[:bookmark:SIP_1]](sip_1.md) JS Mock Library
-* :pick: [[:bookmark:SIP_2]](sip_2.md) PGP Signature
-* :x: [:bookmark:SIP_3] Kira Login
+* :white_check_mark: [[:bookmark:SIP_1]](sip_1.md) JS Mock Library
+* :white_check_mark: [[:bookmark:SIP_2]](sip_2.md) PGP Signature
+* :pick: [[:bookmark:SIP_3]](sip_3.md) Functional HW Signer
+* :x: [:bookmark:SIP_4] Kira Login
 
 
 
