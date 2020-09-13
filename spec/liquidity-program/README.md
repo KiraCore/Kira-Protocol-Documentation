@@ -8,8 +8,9 @@ The liquidity program milestones consist of series of iterations and Liquidity I
 To learn more about branches and development process, see [versioning](../versioning.md) documentation.
 
 1. :link: **Iteration 0**
-   * :zap: Order Books Management
-* :pick: [:bookmark:SIP_1] ERC20 KEX
+   * :zap: Ethereum
+      * :x: [[:bookmark:LIP_1]](./lip_1.md) ERC20 KEX
+      * :x: [[:bookmark:LIP_2]](./lip_2.md) Uniswap v2 Liquidity Rewards
 
 
 
