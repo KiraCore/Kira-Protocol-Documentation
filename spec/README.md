@@ -4,22 +4,16 @@
 
 _NOTE: All contributors to the Kira Core stack, spec and other aspects of the organization operations can be found in the [contributors list](../contributors.md)_
 
-## Kira Protocol Implementation Specifications
+## KIRA Network
 
-In this document you will find all references necessary to understand and execute each stage of the Kira Protocol implementation.
+In this document you will find all references necessary to understand and execute each stage of the KIRA Network Implementation.
 
 * [Iteration-0](iteration-0/README.md)
     * Proof of Concept Blockchain Application
 * [Iteration-1](iteration-1/README.md)
     * First Iteration Public Testnet (Pre MVP)
-
-## Kira Core Design Specifications
-
-In this document you will all references necessary to understand and execute each stage of the fronted related design requirements.
-
-* [Iteration-0](kira-core/iteration-0/README.md)
-  * Kira Core Landing Page
-
-
-
-
+* [Liquidity Program](liquidity-program/README.md)
+    * KEX Placeholder Token
+    * LP Rewards
+* [Kira Signer](kira-signer/README.md)
+    * Offline Singer

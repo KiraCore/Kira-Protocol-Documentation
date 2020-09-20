@@ -18,10 +18,10 @@ Random (Order) Matching Function used by Kira to prevent front-running
 The name of the Cosmos SDK application  (Japanese for "world") for the Kira Hub.
 
 ### Flavoured Functions
-In the context of Kira Protocol flavoured function is a function which logic flow is controlled by individual set of actors (e.g. governance or curators).
+In the context of KIRA Network flavoured function is a function which logic flow is controlled by individual set of actors (e.g. governance or curators).
 
 ### Network Fees
-Fees are paid by the user for executing transactions, Kira Protocol has 3 types of network fees (`Τ`, `Ε`, `Ι`) further detailed in the [fees spec](fees.md)
+Fees are paid by the user for executing transactions, KIRA Network has 3 types of network fees (`Τ`, `Ε`, `Ι`) further detailed in the [fees spec](fees.md)
 
 ### RDM
 Rewards distribution module is a module responsible for the network actors and operators incentivization through network fees

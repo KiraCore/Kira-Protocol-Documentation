@@ -1,4 +1,4 @@
-# [⏎](README.md) Stafi Protocol vs Kira Protocol
+# [⏎](README.md) Stafi Protocol vs KIRA Network
 
 ## References
 * Stafi Whitepaper: https://docs.stafi.io/stafi-whitepaper/stafi-whitepaper ([mirror-1](http://web.archive.org/web/20200720103318/https://docs.stafi.io/stafi-whitepaper/stafi-whitepaper))
@@ -26,11 +26,11 @@
 
 **Stafi** charges commission fees for staking, which are later used to incentivize its own token holders network. The core business model works by assuming that proof of stake networks will never update their chains to provide staking derivatives natively. Stafi functionality can be replaced by a smart contracts on the native chains, which can potentially harm its business model. Stafi is a good solution for PoS networks which do not have a concept of smartcontracts or are unwilling to provide liquidity to staking assets. To summarize, the smaller the number of PoS networks provide native staking derivatives the bigger the potential and utility of the Stafi Protocol.
 
-**Kira** charges network fees for interacting with its network and exchange protocol. The core business model works by assuming that more PoS networks will natively support staking derivatives or more products similar to Stafi enter the market. With growing number of derivatives and tokens in the ecosystem Kira can offer market access and liquidity to greater number of networks and assets. Finally Kira allows token holders to utilize 100% of their capital regardless of the token type. Kira not only does NOT charge any commission for staking but pays out additional revenues in form of block and fee rewards. Growing number of assets at stake probabilistically  increases liquidity of the exchange protocol which in turn increases  trading activity, thus  increasing revenues from the network fees. Growing revenue from the network fees provide more incentives to stake even greater number of assets. To summarize, the greater the number of PoS networks provide native staking derivatives the bigger the potential and utility of the Kira Protocol.
+**Kira** charges network fees for interacting with its network and exchange protocol. The core business model works by assuming that more PoS networks will natively support staking derivatives or more products similar to Stafi enter the market. With growing number of derivatives and tokens in the ecosystem Kira can offer market access and liquidity to greater number of networks and assets. Finally Kira allows token holders to utilize 100% of their capital regardless of the token type. Kira not only does NOT charge any commission for staking but pays out additional revenues in form of block and fee rewards. Growing number of assets at stake probabilistically  increases liquidity of the exchange protocol which in turn increases  trading activity, thus  increasing revenues from the network fees. Growing revenue from the network fees provide more incentives to stake even greater number of assets. To summarize, the greater the number of PoS networks provide native staking derivatives the bigger the potential and utility of the KIRA Network.
 
 ## Summary
 
-Stafi protocol is a complementary product, that can increase market reach and use of the Kira Interchain Exchange Protocol. If few of the basic security flaws of the Stafi Protocol are addressed it should be possible for secure use within interchain ecosystem. 
+Stafi protocol is a complementary product, that can increase market reach and use of the KIRA Network. If few of the basic security flaws of the Stafi Protocol are addressed it should be possible for secure use within interchain ecosystem. 
 
 
 

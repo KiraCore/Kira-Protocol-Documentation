@@ -1,7 +1,7 @@
 
 # [⏎](../../README.md) Iteration 0
 
-The `Iteration 0` is a first evolutionary step of the Kira Core organization setup. The main goal of this iteration is to provide minimum viable user experience for everyone landing on the Kira Core main website and documentation that will help anyone understand the organization structure as well as full Kira Protocol project scope.
+The `Iteration 0` is a first evolutionary step of the Kira Core organization setup. The main goal of this iteration is to provide minimum viable user experience for everyone landing on the Kira Core main website and documentation that will help anyone understand the organization structure as well as full KIRA Network project scope.
 
 _NOTE: To learn more about Kira Core company see [about](../about.md) file._
 

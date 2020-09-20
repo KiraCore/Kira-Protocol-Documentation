@@ -1,6 +1,6 @@
 # Network Fees
 
-Types of network fees in the Kira Protocol
+Types of network fees in the KIRA Network
 
 1. Transaction Fee
 2. Execution Fee

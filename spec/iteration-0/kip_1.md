@@ -3,7 +3,7 @@
 
 Any user with non zero balance of at least `2` **different** tokens (can be a same token originating from 2 different networks) must be able to create an order book by sending a `create_order_book` transaction.
 
-The order book creation must involve a custom fee (other than transaction fee), paid in the whitelisted fee token. For the sake of the PoC we will simplify this functionality to a fixed fee payment in a native [Kira Protocol Token (KEX)](..\native-token.md). Order book creation fee can be defined (hard coded) in the genesis file.
+The order book creation must involve a custom fee (other than transaction fee), paid in the whitelisted fee token. For the sake of the PoC we will simplify this functionality to a fixed fee payment in a native [KIRA Token (KEX)](..\native-token.md). Order book creation fee can be defined (hard coded) in the genesis file.
 
 _NOTE: Order book creation fee is necessary to prevent spam attacks_
 

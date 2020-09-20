@@ -1,7 +1,7 @@
 
 # [⏎](../README.md) Iteration 0
 
-The `Iteration 0` or Proof of Concept (PoC) is a first evolutionary step of the Kira Protocol. The main goal of this iteration is to create minimum viable blockchain-application based service that end user can interact with. The subject of the PoC is a Decentralized Exchange (DEX), a blockchain application containing minimum set of instructions necessary to enable 2 or more users to trustlessly exchange their tokens.
+The `Iteration 0` or Proof of Concept (PoC) is a first evolutionary step of the KIRA NEtwork. The main goal of this iteration is to create minimum viable blockchain-application based service that end user can interact with. The subject of the PoC is a Decentralized Exchange (DEX), a blockchain application containing minimum set of instructions necessary to enable 2 or more users to trustlessly exchange their tokens.
 
 _NOTE: Kira Protocol is NOT a Decentralized Exchange, however DEX was chosen by us as the simplest DeFi system that can be used for the purpose of demonstrating protocol capabilities in the later iterations._
 

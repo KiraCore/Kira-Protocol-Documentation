@@ -1,7 +1,7 @@
 
 # [⏎](../README.md) Iteration 1
 
-The `Iteration 1` is a second evolutionary step of the Kira Protocol. The main goal of this iteration is to deploy a minimum usable Public Testnet, where independent testers could control and manage the network. The subject of the testnet will be a minimum viable governance system and ensuring that early testers become familiar with operating validator nodes.
+The `Iteration 1` is a second evolutionary step of the KIRA Network. The main goal of this iteration is to deploy a minimum usable Public Testnet, where independent testers could control and manage the network. The subject of the testnet will be a minimum viable governance system and ensuring that early testers become familiar with operating validator nodes.
 
 ## Roadmap
 
@@ -34,6 +34,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
       * :x: :new_moon: [:bookmark:KIP_31] List Functions & Metadata
    * :zap: Availability
       * :x: :new_moon: [:bookmark:KIP_32] Trusted Address Book
+      * :x: :new_moon: [:bookmark:KIP_47] INTERX Response Caching 
 3. :computer: **Web User Interface**  
    * :zap: Network Management
       * :x: :full_moon: [:bookmark:KIP_33] Preview Validator Set

@@ -2,7 +2,7 @@
 
 > Place Order
 
-The default order type in Kira Protocol should be a limit order. A limit buy order can only be executed at the limit price or lower, and a limit sell order can only be executed at the limit price or higher. A limit order can only be filled if the market price reaches it. Limit orders do NOT guarantee execution, but ensure that users do not pay more than a defined price.
+The default order type in KIRA Network should be a limit order. A limit buy order can only be executed at the limit price or lower, and a limit sell order can only be executed at the limit price or higher. A limit order can only be filled if the market price reaches it. Limit orders do NOT guarantee execution, but ensure that users do not pay more than a defined price.
 
 Orders placed using `create_limit_order` transaction must be linked to a particular order book by the ID. When order is placed user tokens must be locked in the account controlled by the order book module.   
 
