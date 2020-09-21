@@ -34,7 +34,8 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
       * :x: :new_moon: [:bookmark:KIP_31] List Functions & Metadata
    * :zap: Availability
       * :x: :new_moon: [:bookmark:KIP_32] Trusted Address Book
-      * :x: :new_moon: [:bookmark:KIP_47] INTERX Response Caching 
+      * :x: :new_moon: [[:bookmark:KIP_47]](KIP_47.md) INTERX Response Caching 
+      * :x: :new_moon: [[:bookmark:KIP_48]](KIP_48.md) INTERX Faucet
 3. :computer: **Web User Interface**  
    * :zap: Network Management
       * :x: :full_moon: [:bookmark:KIP_33] Preview Validator Set
