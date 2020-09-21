@@ -27,15 +27,15 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
      * :x: :full_moon: [[:bookmark:KIP_46]](kip_46.md) Parameterized Permissions 
 2. :globe_with_meridians: **[REST Server / JSON RPC](../rpc/README.md)**
    * :zap: Queries 
-      * :x: :full_moon: [[:bookmark:KIP_27]](KIP_27.md) List Network Actors & Permissions
-      * :x: :full_moon: [[:bookmark:KIP_28]](KIP_28.md) List Proposal/s
+      * :x: :full_moon: [[:bookmark:KIP_27]](kip_27.md) List Network Actors & Permissions
+      * :x: :full_moon: [[:bookmark:KIP_28]](kip_28.md) List Proposal/s
       * :x: :new_moon: [:bookmark:KIP_29] Show Code of Conduct
       * :x: :new_moon: [:bookmark:KIP_30] List Token Alias/es
       * :x: :new_moon: [:bookmark:KIP_31] List Functions & Metadata
    * :zap: Availability
       * :x: :new_moon: [:bookmark:KIP_32] Trusted Address Book
-      * :x: :new_moon: [[:bookmark:KIP_47]](KIP_47.md) INTERX Response Caching 
-      * :x: :new_moon: [[:bookmark:KIP_48]](KIP_48.md) INTERX Faucet
+      * :x: :new_moon: [[:bookmark:KIP_47]](kip_47.md) INTERX Response Caching 
+      * :x: :new_moon: [[:bookmark:KIP_48]](kip_48.md) INTERX Faucet
 3. :computer: **Web User Interface**  
    * :zap: Network Management
       * :x: :full_moon: [:bookmark:KIP_33] Preview Validator Set
