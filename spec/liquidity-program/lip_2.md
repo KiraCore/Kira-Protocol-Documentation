@@ -21,10 +21,13 @@ Token contract should be [upgradable](https://ethereum.stackexchange.com/questio
 ## Requirements
 
 * Configurable token paris (minimum 3)
-* Automated token distribution to all who provide liquidity to configured token pairs
-* Configurable Block/Time after which tokens are distributed
+* Token Distribution upon user request
+* Configurable block time within which user must claim rewards
+* Rewards should only be distributed for minimum balance between two claims
+* Check if LP tokens were not withdrawn by the user within last claim period
 * Configurable amount of rewards to distribute for each token pair
 * Contract must be upgradeable though proxy contract.
+
 
 ## Testing
 
