@@ -12,7 +12,8 @@ Initial Supply: `300'000'000`
 Symbol: `KEX`
 Decimals: `6`
 Freezing: `Yes with exception for curated list of addresses`
-Whitelist: `Excerpts account freeze, should have 3 options: allow_deposit, allow_transfer, allow_all`
+Whitelist: `Exception from the account freeze, should have 3 options: allow_deposit, allow_transfer, allow_all`
+Transactions: `Must have multi-send capability for whitelist and token transfers`
 
 _NOTE: Token must have implementation fully compatible with the ERC20 standard as it is essential to be compatible with the uniswap v2._
 

@@ -15,7 +15,8 @@ Proposal should have following properties:
 * Configurable in genesis `expiration` time (uint32) - seconds since submission
 * Configurable in genesis `enactment` time (uint32) - seconds since expiration
 * Allowed vote types: `yes`, `no`, `veto`, `abstain`
-* ZIP compressed text content (data) up to 1 MB
+* ZIP compressed text content (data or hyperlink) up to 1 MB
+* Blake2 hash of uncompressed data
 * Status with following types:
   * `undefined` - 0x00
   * `active` - 0x01

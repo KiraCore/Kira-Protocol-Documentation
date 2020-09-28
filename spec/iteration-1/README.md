@@ -24,13 +24,14 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
    * :zap: Security
      * :x: :full_moon: [[:bookmark:KIP_44]](kip_44.md) Transaction Fee
      * :x: :full_moon: [[:bookmark:KIP_45]](kip_45.md) Execution Fees
-     * :x: :full_moon: [[:bookmark:KIP_46]](kip_46.md) Parameterized Permissions 
+     * :x: :full_moon: [[:bookmark:KIP_46]](kip_46.md) Parameterized Permissions
+     * :x: :new_moon: [[:bookmark:KIP_49]](kip_49.md) Transaction Processing
 2. :globe_with_meridians: **[REST Server / JSON RPC](../rpc/README.md)**
    * :zap: Queries 
       * :x: :full_moon: [[:bookmark:KIP_27]](kip_27.md) List Network Actors & Permissions
       * :x: :full_moon: [[:bookmark:KIP_28]](kip_28.md) List Proposal/s
       * :x: :new_moon: [:bookmark:KIP_29] Show Code of Conduct
-      * :x: :new_moon: [:bookmark:KIP_30] List Token Alias/es
+      * :x: :new_moon: [[:bookmark:KIP_30]](kip_30.md) List Token Alias/es
       * :x: :new_moon: [:bookmark:KIP_31] List Functions & Metadata
    * :zap: Availability
       * :x: :new_moon: [:bookmark:KIP_32] Trusted Address Book

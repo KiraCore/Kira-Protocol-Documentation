@@ -7,17 +7,17 @@ It must be possible to define and update token aliases. The tokens usually have 
 
 By submitting `upsert_token_alias` a proposal should be created that will enable governance set to update **Token Alias**. The upsert token alias function should have an assigned identifier in the functions registry.
 
-_OPTIONALLY: It should be possible to define execution cost in genesis  - [Execution Fee](/spec/fees.md) to submit `upsert_token_alias` proposal._
+_NOTE: Define execution cost in genesis  - [Execution Fee](/spec/fees.md) to submit `upsert_token_alias` proposal._
 
 Proposal should have following properties:
 * Configurable in genesis `expiration` time (uint32) - seconds since submission
 * Configurable in genesis `enactment` time (uint32) - seconds since expiration
 * Allowed vote types: `yes`, `no`, `veto`, `abstain`
-* `ticker` - Ticker (eg. ATOM, KEX, BTC)
+* `symbol` - Ticker (eg. ATOM, KEX, BTC)
 * `name` - Token Name (e.g. Cosmos, Kira, Bitcoin)
-* `symbol` - Graphical Symbol  (url link to graphics)
+* `icon` - Graphical Symbol  (url link to graphics)
 * `decimals` - Integer number of max decimals
-* `tokens` - An array of token denoms to be aliased 
+* `denoms` - An array of token denoms to be aliased 
 * Status with following types:
   * `undefined` - 0x00
   * `active` - 0x01
@@ -25,7 +25,9 @@ Proposal should have following properties:
   * `passed` - 0x03
   * `enacted` - 0x04
 
-_NOTE: Network actors with assumed roles `councilor` should by default posses ability to propose and vote on `upsert_token_alias`. Network actors with assumed roles `validator` should by default posses ability to vote on `upsert_token_alias`. Those types of permissions should be predefined in genesis_
+**IMPORTANT: It has to be ensured that a single token denom can have only a single alias otherwise a tx should fail.**
+
+_NOTE: Network actors with assumed `governance` role should by default posses ability to propose and vote on `upsert_token_alias`. Network actors with assumed roles `validator` should by default posses ability to vote on `upsert_token_alias`. Those types of permissions should be predefined in genesis_
 
 ## Proposal Vote
 
