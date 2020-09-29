@@ -12,10 +12,21 @@ Initial Supply: `300'000'000`
 Symbol: `KEX`
 Decimals: `6`
 Freezing: `Yes with exception for curated list of addresses`
-Whitelist: `Exception from the account freeze, should have 3 options: allow_deposit, allow_transfer, allow_all`
+Whitelist: `Exception from the account freeze, should have 3 options: allow_deposit, allow_transfer, allow_unconditional_deposit, allow_unconditional_transfer`
+Blacklist: `Prohibit all interaction of the address with the contract + option to remove accounts from blacklist`
 Transactions: `Must have multi-send capability for whitelist and token transfers`
 
+To be more precise whitelist should have 4 modes:
+* allow_deposit - if account has allow deposit permission then it should be possible to deposit tokens to that account as long as accounts depositing have allow_transfer permission
+* allow_transfer - if account has allow transfer permission then that account should be able to transfer tokens to other accounts with allow_deposit permission
+* allow_unconditional_deposit - deposit to the account should be possible even if account depositing has no permission to transfer
+* allow_unconditional_transfer - transfer from the account should be possible to any account even if the destination account has no deposit permission
+
 _NOTE: Token must have implementation fully compatible with the ERC20 standard as it is essential to be compatible with the uniswap v2._
+
+_NOTE: All functions such as whitelist or blacklist should be accepting array of accounts to enable timely execution without need to submit transactions multiple times to blacklist/whitelist multiple accounts_
+
+_NOTE: Blacklist should take priority before all other permissions_
 
 ## Testing
 
