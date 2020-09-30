@@ -35,3 +35,4 @@ If `denoms` property is specified, response of the `query_aliases` command shoul
     }
 }
 ```
+

@@ -26,6 +26,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
      * :x: :full_moon: [[:bookmark:KIP_45]](kip_45.md) Execution Fees
      * :x: :full_moon: [[:bookmark:KIP_46]](kip_46.md) Parameterized Permissions
      * :x: :new_moon: [[:bookmark:KIP_49]](kip_49.md) Transaction Processing
+     * :x: :full_moon: [[:bookmark:KIP_50]](kip_50.md) Multi-Token Fee Payment
 2. :globe_with_meridians: **[REST Server / JSON RPC](../rpc/README.md)**
    * :zap: Queries 
       * :x: :full_moon: [[:bookmark:KIP_27]](kip_27.md) List Network Actors & Permissions

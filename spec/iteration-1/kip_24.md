@@ -29,6 +29,8 @@ Proposal should have following properties:
 
 _NOTE: Network actors with assumed `governance` role should by default posses ability to propose and vote on `upsert_token_alias`. Network actors with assumed roles `validator` should by default posses ability to vote on `upsert_token_alias`. Those types of permissions should be predefined in genesis_
 
+_NOTE: It must be possible to predefine token aliases in genesis file so that deployment of test network can be simplified_
+
 ## Proposal Vote
 
 By submitting `vote` transaction along proposal identifier it should be possible for the governance members with the whitelisted permission to vote on `upsert_token_alias` to submit relevant vote types to pass or reject action of upsetting Token Aliases.
