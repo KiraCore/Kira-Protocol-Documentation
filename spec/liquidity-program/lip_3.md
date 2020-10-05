@@ -15,7 +15,9 @@ Value of `R1` and `R2` must be defined programmatically, meaning that we will sp
 
 Once the auction ends, meaning value contributed is greater than current price times number of tokens to distribute, the tokens will be transferred to the holders in proportion to their contribution at the valuation between `P1` and `P3` that the auction ended at. 
 
-All the participants in the auction get the tokens at the same price that the auction finalized at without any bonuses or other type of discounts for early participation. 
+All the participants in the auction get the tokens at the same price that the auction finalized at without any bonuses or other type of discounts for early participation.
+
+_NOTE: Time at which auction starts must be configurable_
 
 ## Limitations
 
@@ -23,7 +25,9 @@ The whitelist mechanism should be implemented, meaning that only whitelisted and
 
 ## Security
 
-After finalization of the auction tokens (KEX) should be sent to the participants that contributed funds and the funds (ETH) should be transferred to configurable account address.
+After finalization of the auction, tokens (KEX) should be sent to the participants that contributed funds, and the funds (ETH) should be transferred to configurable account address. It should not be possible to change withdraw address for the funds after the auction ends.
 
+Contract owner should have ability to withdraw funds manually in case of malfunction of the withdraw mechanism (e.g. insufficient gas). It should be however not possible to withdraw funds to any other address then the one preconfigured when the auction starts.
 
+Contract should not allow to deposit tokens before the auction starts and after the auction ends.
 
