@@ -1,4 +1,4 @@
-# [⏎](README.md#Roadmap) SIP_2
+# [⏎](README.md#Roadmap) LIP_2
 >  Uniswap v2 LP Rewards
 
 Uniswap is a great way induce liquidity for ERC20 KEX token, we have to create incentivization program which will reward all users providing liquidity into two markets:

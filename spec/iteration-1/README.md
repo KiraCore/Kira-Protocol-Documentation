@@ -38,7 +38,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
       * :x: :new_moon: [:bookmark:KIP_32] Trusted Address Book
       * :x: :new_moon: [[:bookmark:KIP_47]](kip_47.md) INTERX Response Caching 
       * :x: :new_moon: [[:bookmark:KIP_48]](kip_48.md) INTERX Faucet
-3. :computer: **Web User Interface**  
+3. :computer: **User Interface / Deployment**  
    * :zap: Network Management
       * :x: :full_moon: [:bookmark:KIP_33] Preview Validator Set
       * :x: :new_moon: [:bookmark:KIP_34] Claim Validator Seat
@@ -52,6 +52,8 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
       * :x: :new_moon: [:bookmark:KIP_41] Create Proposal
    * :zap: Asset Management
       * :x: :new_moon: [:bookmark:KIP_43] Alias Token Name/s
+   * :zap: Node Management
+      * :x: :new_moon: [:bookmark:KIP_51] Deployment and Management Scripts v1
 
 ### Dependency Map
 

@@ -9,8 +9,9 @@ To learn more about branches and development process, see [versioning](../versio
 
 1. :link: **Iteration 0**
    * :zap: Ethereum
-      * :x: [[:bookmark:LIP_1]](./lip_1.md) ERC20 KEX
-      * :x: [[:bookmark:LIP_2]](./lip_2.md) Uniswap v2 Liquidity Rewards
+      * :white_check_mark: [[:bookmark:LIP_1]](./lip_1.md) ERC20 KEX
+      * :pick: [[:bookmark:LIP_2]](./lip_2.md) Uniswap v2 Liquidity Rewards
+      * :x: [[:bookmark:LIP_3]](./lip_3.md) Liquidity Auction
 
 
 

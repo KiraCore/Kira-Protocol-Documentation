@@ -1,4 +1,4 @@
-# [⏎](README.md#Roadmap) SIP_1
+# [⏎](README.md#Roadmap) LIP_1
 >  ERC20 KEX
 
 KEX is a native asset of the Kira Network, however before the Kira Network goes live we have to provide community with the early access to the market on the Ethereum blockchain. For that purpose we will deploy [ERC20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md) placeholder token that will be in the future swapped in the manual or half-automated way for the native Kira token. 
