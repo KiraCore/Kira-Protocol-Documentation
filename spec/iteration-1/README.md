@@ -53,7 +53,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
    * :zap: Asset Management
       * :x: :new_moon: [:bookmark:KIP_43] Alias Token Name/s
    * :zap: Node Management
-      * :x: :new_moon: [:bookmark:KIP_51] Deployment and Management Scripts v1
+      * :x: :full_moon: [[:bookmark:KIP_51]](kip_51.md) Deployment and Management Scripts v1
 
 ### Dependency Map
 
