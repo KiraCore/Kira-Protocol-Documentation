@@ -77,7 +77,7 @@ _NOTE: Network actor can have only a single status type assigned_
 
 ### Vote Types
 
-Vote types can be treated the same way as permissions that can be assigned to specific role or individual account actor. 
+Vote types can be treated as permission parameter that can be assigned to specific role or individual account actor. 
 
 * `abstain`
 * `yes`
