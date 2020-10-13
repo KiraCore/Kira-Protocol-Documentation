@@ -72,15 +72,15 @@ Each part of the infrastructure should have a dedicated subnet:
 
 ```
 KIRA_REGISTRY_SUBNET="100.0.0.0/8"
-KIRA_VALIDATOR_SUBNET="101.0.0.0/8"
-KIRA_KMS_SUBNET="102.0.0.0/8"
+KIRA_KMS_SUBNET="101.0.0.0/8"
+KIRA_VALIDATOR_SUBNET="102.0.0.0/8"
 KIRA_SENTRY_SUBNET="103.0.0.0/8"
 KIRA_FRONTEND_SUBNET="104.0.0.0/8"
 ```
 
 Docker registry should have ip `100.1.0.1` and operate on port `5000`
-Validator node should have ip `101.1.0.1`
-KMS node should have ip `102.1.0.1`
+KMS node should have ip `101.1.0.1`
+Validator node should have ip `102.1.0.1`
 Sentry nodes should have ip's `103.1.0.X`
 A static (frontend) page should have ip `104.1.0.1` and operate on port `80`
 
@@ -118,6 +118,11 @@ _NOTE: There is no requirement in Demo Mode for any type of hardening, all ports
 
 _NOTE: Public key used to sign INTERX responses should be further registered in the signer registry as per KIP_4 spec_
 
+#### Architecture Overview
+
+![picture 3](https://i.imgur.com/eKpNOdO.png)  
+
+
 ### Full Node Mode
 
 Full Node mode should enable users communication with the localnet, testnet/s or mainnet. One of the core features of this mode should be ease of creating snapshots and syncing from the backup. Just like in case of Demo Mode an INTERX service should be started along the full node to enable frontend ease of communication with the backend.
@@ -137,6 +142,11 @@ Full Node mode should enable users communication with the localnet, testnet/s or
 
 _NOTE: In the Full Node Mode hardening of all networking should be ensured, we should also enable verification _
 
+#### Architecture Overview
+
+![picture 2](https://i.imgur.com/5bQbCk8.png)  
+
+
 ### Validator Mode
 
 Validator mode should enable users to easily deploy their validator node on the testnet or mainnet. In this mode we must ensure highest level of security and safe key management (enable KMS). In case of networking a sentry architecture has to be used where one full one is connected internally with a validator and trusted seeds, and another available publicly - exposing INTERX but no RPC or P2P.
@@ -154,6 +164,10 @@ Validator mode should enable users to easily deploy their validator node on the 
    * Private - outbound only traffic except P2P, no public sentry
    * Public - INTERX open, public sentry enabled
 
+#### Architecture Overview
+
+![picture 1](https://i.imgur.com/qN7RiPT.png)  
+
 ## Management
 
 One of the important aspects of the `kira` service should be container management, health checks in each container, access to all logs (dump), state snapshots, recovery form snapshots and live access to resources utilization statistics such as CPU, RAM and disk space. 
@@ -168,7 +182,11 @@ We have to ensure that logs dump to not overflow the disk space (log size limit)
 
 ### Resources Utilization
 
-Life resource utilization info should be displayed directly in the `kira` console tool, it should also be logged to that monitoring tools can tract peak traffic.
+Live resource utilization info should be displayed directly in the `kira` console tool, it should also be logged to that monitoring tools can tract peak traffic.
+
+### Backups
+
+When making backups of the blockchain state a sekai app must be halted in a graceful manner otherwise db will be corrupted and recovery from such snapshot would not be possible 
 
 ## Security
 
