@@ -36,7 +36,8 @@ To simplify logic only one token should be used for the fee payments, for exampl
     "xeth": {
         "rate": 0.0001,
         "fee_payments": false
-    }
+    },
+    { ... }, ...
 }
 ```
 
@@ -52,3 +53,8 @@ Network Properties Registry (as introduced in KIP_44) registry should be extende
 
 We have to modify CLI so that tx payments are possible using diffrent token types, best way to achieve it is to use `<amount><denom>` syntax, for example: `--fee 10ubtc --exFee 100ubtc`.
 
+### Security
+
+We have to ensure that the lowest possible fee that can be paid is not smaller then the lowest denomination of any particular token to prevent situations where the blockchain application would allow a 0 fee tx to be processed because of a very small or very large fraction defined in the Rates Registry.
+
+The KEX record should not be possible to modify or disable, meaning that `rate` has to be set to `1` and `fee_payments` set to `true`. This must be done to ensure that no other token can be used to take control over the network operations and so blockchain operations can't be halted by a malicious governance council managing the Token Rates Registry. 
