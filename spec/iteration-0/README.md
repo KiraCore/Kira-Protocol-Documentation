@@ -3,7 +3,7 @@
 
 The `Iteration 0` or Proof of Concept (PoC) is a first evolutionary step of the KIRA NEtwork. The main goal of this iteration is to create minimum viable blockchain-application based service that end user can interact with. The subject of the PoC is a Decentralized Exchange (DEX), a blockchain application containing minimum set of instructions necessary to enable 2 or more users to trustlessly exchange their tokens.
 
-_NOTE: Kira Protocol is NOT a Decentralized Exchange, however DEX was chosen by us as the simplest DeFi system that can be used for the purpose of demonstrating protocol capabilities in the later iterations._
+_NOTE: KIRA Netowrk is NOT a Decentralized Exchange, however DEX was chosen by us as the simplest DeFi system that can be used for the purpose of demonstrating protocol capabilities in the later iterations._
 
 ## Roadmap
 
@@ -28,8 +28,10 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
       * :pick: :full_moon: [[:bookmark:KIP_6]](kip_6.md) List Orders
       * :pick: :new_moon: [[:bookmark:KIP_7]](kip_7.md) List Signer Keys
    * :zap: Security
-      * :pick: :new_moon: [[:bookmark:KIP_8]](kip_8.md) Response Signing & Proxy
-      * :x: :new_moon: [[:bookmark:KIP_9]](kip_9.md) Endpoints Whitelist
+      * :white_check_mark: :new_moon: [[:bookmark:KIP_8]](kip_8.md) Response Signing & Proxy
+      * :white_check_mark: :new_moon: [[:bookmark:KIP_9]](kip_9.md) Endpoints Whitelist
+      * :x: :new_moon: [[:bookmark:KIP_9.1]](kip_9.1.md) User Authentication
+      * :x: :new_moon: [[:bookmark:KIP_9.2]](kip_9.2.md) Rate Limiting
   
 3. :computer: **Web User Interface** (Static Page)
    * :zap: Account Management
@@ -43,9 +45,9 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
       * :x: :new_moon: [:bookmark:KIP_16] List & Cancel Orders 
    * :zap: Network Management
       * :x: :new_moon: [:bookmark:KIP_17] List Validator 
-      * :x: :new_moon: [:bookmark:KIP_18] List Registered Signer Keys 
    * :zap: Security
       * :x: :new_moon: [[:bookmark:KIP_13]](kip_13.md) Trusted Signatures
+      * :x: :new_moon: [[:bookmark:KIP_18]](kip_18.md) Session Keys
 
 ### Dependency Map
 
