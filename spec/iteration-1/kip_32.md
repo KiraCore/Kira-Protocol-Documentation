@@ -35,4 +35,3 @@ Results should be always ordered by date in the descending order.
 ```
 
 _NOTE: `account` should be a withdraw or deposit account depending on the endpoint type (if `/withdraws` then `account == destination`, if `/deposits` then `account == source` )_
-

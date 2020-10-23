@@ -18,7 +18,6 @@ To learn more about branches and development process, see [versioning](../versio
 * :white_check_mark: [[:bookmark:SIP_1]](sip_1.md) JS Mock Library
 * :white_check_mark: [[:bookmark:SIP_2]](sip_2.md) PGP Signature
 * :pick: [[:bookmark:SIP_3]](sip_3.md) Functional HW Signer
-* :x: [:bookmark:SIP_4] Kira Login
-
-
+* :x: [:bookmark:SIP_4] Secret Data Transmission
+* :x: [:bookmark:SIP_5] Kira Login
 
