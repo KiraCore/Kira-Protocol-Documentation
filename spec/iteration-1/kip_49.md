@@ -9,4 +9,8 @@ We have to enable creation of transactions with predefined `expiration` timestam
 
 ## Security
 
-We have to ensure that when `challenge` transaction is sent the assets in question become locked and unaccessible to any of the two parties. 
+We have to ensure that when `challenge` transaction is sent the assets in question become locked and unaccessible to any of the two parties until the `expiration` time passes.
+
+When sending the transaction the destination account should be specified. It should not be possible to claim the money using accounts that were not explicitly specified.
+
+To generate a riddle a string provided by the user should be hashed twice using Blake2 algorithm. Hashing has to occur on the frontend / CLI side. The solution has also be hashed but only once (this also has to take part on the frontend / CLI side). Backend should check the solution by Blake2 hashing the provided `solution` once and checking if the `Blake2(solution) == challenge`. This way the solution being potentially compromising information can be protected (e.g. name or often used password). 
