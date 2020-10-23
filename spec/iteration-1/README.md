@@ -33,9 +33,9 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
       * :x: :full_moon: [[:bookmark:KIP_28]](kip_28.md) List Proposal/s
       * :x: :new_moon: [:bookmark:KIP_29] Show Code of Conduct
       * :x: :new_moon: [[:bookmark:KIP_30]](kip_30.md) List Token Alias/es
-      * :x: :new_moon: [:bookmark:KIP_31] List Functions & Metadata
+      * :x: :new_moon: [[:bookmark:KIP_31]](kip_31.md) List Functions & Metadata
    * :zap: Availability
-      * :x: :new_moon: [:bookmark:KIP_32] Trusted Address Book
+      * :x: :new_moon: [[:bookmark:KIP_32]](kip_32.md) Deposits & Withdraws Query
       * :x: :new_moon: [[:bookmark:KIP_47]](kip_47.md) INTERX Response Caching 
       * :x: :new_moon: [[:bookmark:KIP_48]](kip_48.md) INTERX Faucet
 3. :computer: **User Interface / Deployment**  
