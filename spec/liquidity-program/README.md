@@ -12,6 +12,7 @@ To learn more about branches and development process, see [versioning](../versio
       * :white_check_mark: [[:bookmark:LIP_1]](./lip_1.md) ERC20 KEX
       * :white_check_mark: [[:bookmark:LIP_2]](./lip_2.md) Uniswap v2 Liquidity Rewards
       * :white_check_mark: [[:bookmark:LIP_3]](./lip_3.md) Liquidity Auction
-      * :x: [[:bookmark:LIP_3.1]](./lip_3.1.md) Liquidity Auction Frontend
+      * :pick: [[:bookmark:LIP_3.1]](./lip_3.1.md) Liquidity Auction Frontend
+      * :white_check_mark: [[:bookmark:LIP_3.2]](./lip_3.2.md) Token Balances Caching Service
 
 
