@@ -71,18 +71,18 @@ docker container restart $id || echo "ERROR: Failed to restart container $1 ($id
 Each part of the infrastructure should have a dedicated subnet:
 
 ```
-KIRA_REGISTRY_SUBNET="100.0.0.0/8"
-KIRA_KMS_SUBNET="101.0.0.0/8"
-KIRA_VALIDATOR_SUBNET="102.0.0.0/8"
-KIRA_SENTRY_SUBNET="103.0.0.0/8"
-KIRA_FRONTEND_SUBNET="104.0.0.0/8"
+KIRA_REGISTRY_SUBNET="10.0.0.0/8"
+KIRA_KMS_SUBNET="10.1.0.0/8"
+KIRA_VALIDATOR_SUBNET="10.2.0.0/8"
+KIRA_SENTRY_SUBNET="10.3.0.0/8"
+KIRA_FRONTEND_SUBNET="10.4.0.0/8"
 ```
 
-Docker registry should have ip `100.1.0.1` and operate on port `5000`
-KMS node should have ip `101.1.0.1`
-Validator node should have ip `102.1.0.1`
-Sentry nodes should have ip's `103.1.0.X`
-A static (frontend) page should have ip `104.1.0.1` and operate on port `80`
+Docker registry should have ip `10.0.0.1` and operate on port `5000`
+KMS node should have ip `10.1.0.1`
+Validator node should have ip `10.2.0.1`
+Sentry nodes should have ip's `10.3.0.X`
+A static (frontend) page should have ip `10.4.0.1` and operate on port `80`
 
 ### Subnet creation example
 
@@ -120,7 +120,7 @@ _NOTE: Public key used to sign INTERX responses should be further registered in 
 
 #### Architecture Overview
 
-![picture 3](https://i.imgur.com/eKpNOdO.png)  
+![picture 1](https://i.imgur.com/qHjRU9a.png)  
 
 
 ### Full Node Mode
@@ -144,8 +144,7 @@ _NOTE: In the Full Node Mode hardening of all networking should be ensured, we s
 
 #### Architecture Overview
 
-![picture 2](https://i.imgur.com/5bQbCk8.png)  
-
+![picture 2](https://i.imgur.com/xglPSu8.png)  
 
 ### Validator Mode
 
@@ -166,7 +165,7 @@ Validator mode should enable users to easily deploy their validator node on the 
 
 #### Architecture Overview
 
-![picture 1](https://i.imgur.com/qN7RiPT.png)  
+![picture 3](https://i.imgur.com/Vqs7DNl.png)  
 
 ## Management
 
