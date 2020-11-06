@@ -12,6 +12,8 @@ In this document you will find all references necessary to understand and execut
     * Proof of Concept Blockchain Application
 * [Iteration-1](iteration-1/README.md)
     * First Iteration Public Testnet (Pre MVP)
+* [Iteration-2](iteration-2/README.md)
+    * Second Iteration Mainnet Release (MVP)
 * [Liquidity Program](liquidity-program/README.md)
     * KEX Placeholder Token
     * LP Rewards

@@ -25,3 +25,9 @@ Fees are paid by the user for executing transactions, KIRA Network has 3 types o
 
 ### RDM
 Rewards distribution module is a module responsible for the network actors and operators incentivization through network fees
+
+### Local Stake Bonded
+Sum of tokens delegated to a single, particular validator
+
+### Global Stake Bonded
+Sum of tokens delegated to all validators in the network

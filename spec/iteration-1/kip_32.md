@@ -20,11 +20,11 @@ Results should be always ordered by date in the descending order.
 ```
 {
     "0xBBB...BBB": {
-        "account": "kira1XXX...XXX", 
-        "tx_type": <string>,
         "time": <Uint64>,
-        "assets": [
+        "txs": [
             {
+               "type": <string>,
+               "address": "kira1XXX...XXX",
                "amount": <Uint64>,
                "denom": <string>
             }, { ... }, ...
