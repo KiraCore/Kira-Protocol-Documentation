@@ -16,6 +16,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
      * :white_check_mark: :full_moon: [[:bookmark:KIP_20]](kip_20.md) Curated Governance Set
      * :pick: :full_moon: [[:bookmark:KIP_21]](kip_21.md) Claim Governance Seat
      * :x: :full_moon: [[:bookmark:KIP_22]](kip_22.md) Upsert Network Actor (Proposal)
+     * :x: :full_moon: [[:bookmark:KIP_22.1]](kip_22.1.md) Upsert Roles (Proposal)
      * :x: :new_moon: [[:bookmark:KIP_23]](kip_23.md) Upsert Code of Conduct (Proposal)
      * :x: :new_moon: [[:bookmark:KIP_24]](kip_24.md) Upsert Token Alias (Proposal)
    * :zap: Consensus
