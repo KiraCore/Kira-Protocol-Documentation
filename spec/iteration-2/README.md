@@ -14,6 +14,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
 1. :link: **Blockchain Application**
    * :zap: Consensus
      * :x: :full_moon: [[:bookmark:KIP_52]](kip_52.md) Fee Rewards Distribution
+     *  :x: :full_moon: [[:bookmark:KIP_54]](kip_54.md) Uptime Counters & Jailing
    * :zap: Governance
      * :x: :full_moon: [[:bookmark:KIP_53]](kip_53.md) Spending Pools
      * :x: :full_moon: [:bookmark:KIP_X] Upgrade Proposal & Revert
