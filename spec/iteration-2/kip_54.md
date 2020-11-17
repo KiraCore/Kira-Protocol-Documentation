@@ -13,9 +13,9 @@ In the KIRA Network case we can't jail validators based on how many time they mi
 
 Incremental counter `mischance` should be created (as part of each validator status data) marking number of times given validator missed it's turn to **PROPOSE** a block (or proposed a block that was not accepted) since the last time his node obtained `active` status. The `mischance` should be zeroed every time validator successfully proposed a block.
 
-A corresponding `max_mischance` property in the Network Properties Registry should be created indicating maximum number of times a validator might miss a chance to propose a block in his round before becoming jailed.
+A corresponding `max_mischance` property in the Network Properties Registry should be created indicating maximum number of times a validator might miss a chance to propose a block in his round before becoming inactivated.
 
-## Jailing
+## Inactivating
 
 If `mischance > max_mischance`, then validator status should be changed to `inactive`. Validator in the `inactive` state should have ability to call an `MsgActivate` to re-activate his node and join the validator set again with the status `active`. The `MsgActivate` should further automatically set the `mischance` to `0`. It is also important that `MsgActivate` can't be called if the validator status is set to anything else bur `inactive`.
 
@@ -41,7 +41,7 @@ The `streak` and `rank` will enable governance to judge real life performance of
 
 The validator node configuration should be modified in such a way that block production should happen immediately, that is in the instance where `(2/3)+1` of `active` validators sign the the proposed block. 
 
-Furthermore a `max_proposal_time` property should be defined within the Network Properties Registry - implying maximum time each validator has to propose a new block before the consensus progresses without them. If this property and configuration was not honored, than validators with a very fast hardware and connection could effectively force validators operating in the home or private DC environment to become jailed.
+Furthermore a `max_proposal_time` property should be defined within the Network Properties Registry - implying maximum time each validator has to propose a new block before the consensus progresses without them. If this property and configuration was not honored, than validators with a very fast hardware and connection could effectively force validators operating in the home or private DC environment to become inactivated.
 
 Finally a `max_dilation_time` property should be included within the Network Properties Registry and enforce that validator nodes should not accept (sign) blocks where proposed block time is smaller or equal to previous block time or differs by more than `max_dilation_time` with their internal clocks. 
 
