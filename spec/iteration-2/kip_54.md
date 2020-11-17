@@ -7,17 +7,17 @@ Not misbehaving on purpose does not automatically imply that validators might no
 
 To prevent consensus from halting we must create uptime counters which can be used to determine whether or not validator is still participating in the consensus. 
 
-In the KIRA Network case we can't jail validators based on how many time they misses to participate in the block production (like in the case of the Cosmos Hub and their slashing module). Reason is that in KIRA all blocks must be produced as soon as `(2/3)+1` of all **active** validators sign the block. The consensus must progress immediately the second minimum number of validators is reached. This implies that not all validators will be participating in the block production, thus missing opportunity to sign a proposed block is expected.
+In the KIRA Network case we can't jail validators based on how many time they misses to participate in the block signing process (like in the case of the Cosmos Hub and their slashing module). Reason is that in case of KIRA all blocks must be produced as soon as `(2/3)+1` of all **active** validators sign the block. The consensus must progress immediately the second minimum number of validators is reached. This implies that not all validators will be participating in the block signing process, thus missing opportunity to sign a proposed block is expected and unavoidable.
 
 ## Implementation
 
-Incremental counter `mischance` should be created (as part of each validator status data) marking number of times given validator missed it's turn to propose a block (or proposed a block that was not accepted) since the last time his node obtained `active` status. The `mischance` should be zeroed every time validator successfully proposed a block.
+Incremental counter `mischance` should be created (as part of each validator status data) marking number of times given validator missed it's turn to **PROPOSE** a block (or proposed a block that was not accepted) since the last time his node obtained `active` status. The `mischance` should be zeroed every time validator successfully proposed a block.
 
 A corresponding `max_mischance` property in the Network Properties Registry should be created indicating maximum number of times a validator might miss a chance to propose a block in his round before becoming jailed.
 
 ## Jailing
 
-If `mischance > max_mischance`, then validator status should be changed to `inactive`. Validator should then have ability to call an `MsgActivate` to re-activate his node and join the validator set again with the status `active`. The `MsgActivate` should further automatically set the `mischance` to `0`. It is also important that `MsgActivate` can't be called if the validator status is set to `active`.
+If `mischance > max_mischance`, then validator status should be changed to `inactive`. Validator in the `inactive` state should have ability to call an `MsgActivate` to re-activate his node and join the validator set again with the status `active`. The `MsgActivate` should further automatically set the `mischance` to `0`. It is also important that `MsgActivate` can't be called if the validator status is set to anything else bur `inactive`.
 
 Validator must also have ability to pause his operations in a graceful manner by submitting `MsgPause` which would change his status to the `paused` - implying the the intended maintenance. In order to re-activate the node, the `MsgUnPause` should be submitted on-chain. The reason to create two transaction types `MsgActivate` and `MsgUnPause` is to provide ability for the governance to define different fees for calling those functions (e.g. `MsgActivate` might be more expensive to call than `MsgUnPause`). Furthermore `MsgUnPause` should **NOT** reset the `mischance` counter. 
 
