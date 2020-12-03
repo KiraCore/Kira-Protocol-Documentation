@@ -27,14 +27,14 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
    * :zap: Availability
       * :x: :new_moon: [:bookmark:KIP_X] TBD
 3. :computer: **User Interface / Deployment**  
-   * :zap: Network Management
-      * :x: :full_moon: [:bookmark:KIP_X] TBD
+   * :zap: Security
+      * :x: :full_moon: [:bookmark:KIP_56](kip_56.md) SAIFU Login & Tx Signing
    * :zap: Governance
-      * :x: :full_moon: [:bookmark:KIP_54] Spending Pool Management
+      * :x: :full_moon: [:bookmark:KIP_X] TBD
    * :zap: Asset Management
       * :x: :new_moon: [:bookmark:KIP_X] TBD
    * :zap: Node Management
-      * :x: :full_moon: [:bookmark:KIP_X] On-chain Upgrade & Revert 
+      * :x: :full_moon: [:bookmark:KIP_X] TBD
 
 ### Dependency Map
 
