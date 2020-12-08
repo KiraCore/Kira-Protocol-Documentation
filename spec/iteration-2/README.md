@@ -29,6 +29,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
 3. :computer: **User Interface / Deployment**  
    * :zap: Security
       * :x: :full_moon: [:bookmark:KIP_56](kip_56.md) SAIFU Login & Tx Signing
+      * :x: :full_moon: [:bookmark:KIP_57](kip_57.md) INTERX Signatures Verification
    * :zap: Governance
       * :x: :full_moon: [:bookmark:KIP_X] TBD
    * :zap: Asset Management
