@@ -21,7 +21,8 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
      * :x: :full_moon: [:bookmark:KIP_X] Upgrade Proposal & Revert
    * :zap: Security
      * :x: :full_moon: [:bookmark:KIP_X] Global Transfers Un/Freeze
-     * :x: :full_moon: [:bookmark:KIP_58] Priv Validator Key Generator
+     * :x: :full_moon: [[:bookmark:KIP_59]](kip_59.md) Double-sign Prevention
+     * :white_check_mark: :full_moon: [[:bookmark:KIP_58]](kip_58.md) Priv Validator Key Generator
 2. :globe_with_meridians: **[REST Server / JSON RPC](../rpc/README.md)**
    * :zap: Queries 
       * :x: :full_moon: [:bookmark:KIP_X] TBD
