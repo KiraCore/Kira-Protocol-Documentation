@@ -41,7 +41,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
       * :x: :new_moon: [[:bookmark:KIP_48]](kip_48.md) INTERX Faucet
 3. :computer: **User Interface / Deployment**  
    * :zap: Network Management
-      * :x: :full_moon: [:bookmark:KIP_33] Preview Validator Set
+      * :x: :full_moon: [[:bookmark:KIP_33]](kip_33.md) Preview Validator Set
       * :x: :new_moon: [:bookmark:KIP_34] Claim Validator Seat
       * :x: :new_moon: [:bookmark:KIP_35] Rotate RPC URLs 
    * :zap: Governance
