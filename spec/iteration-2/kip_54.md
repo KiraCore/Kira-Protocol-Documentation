@@ -17,7 +17,7 @@ A corresponding `max_mischance` property in the Network Properties Registry shou
 
 ## Inactivating
 
-If `mischance > max_mischance`, then validator status should be changed to `inactive`. Validator in the `inactive` state should have ability to call an `MsgActivate` to re-activate his node and join the validator set again with the status `active`. The `MsgActivate` should further automatically set the `mischance` to `0`. It is also important that `MsgActivate` can't be called if the validator status is set to anything else bur `inactive`.
+If `mischance > max_mischance`, then validator status should be changed to `inactive`. Validator in the `inactive` state should have ability to call an `MsgActivate` to re-activate his node and join the validator set again with the status `active`. The `MsgActivate` should further automatically set the `mischance` to `0`. It is also important that `MsgActivate` can't be called if the validator status is set to anything else but `inactive`.
 
 Validator must also have ability to pause his operations in a graceful manner by submitting `MsgPause` which would change his status to the `paused` - implying the the intended maintenance. In order to re-activate the node, the `MsgUnPause` should be submitted on-chain. The reason to create two transaction types `MsgActivate` and `MsgUnPause` is to provide ability for the governance to define different fees for calling those functions (e.g. `MsgActivate` might be more expensive to call than `MsgUnPause`). Furthermore `MsgUnPause` should **NOT** reset the `mischance` counter. 
 
