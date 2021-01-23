@@ -25,7 +25,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
      * :white_check_mark: :full_moon: [[:bookmark:KIP_58]](kip_58.md) Priv Validator Key Generator
 2. :globe_with_meridians: **[REST Server / JSON RPC](../rpc/README.md)**
    * :zap: Queries 
-      * :x: :full_moon: [[:bookmark:KIP_60]](kip_59.md) Query Validators
+      * :x: :full_moon: [[:bookmark:KIP_60]](kip_60.md) Query Validators
    * :zap: Availability
       * :x: :new_moon: [:bookmark:KIP_X] TBD
 3. :computer: **User Interface / Deployment**  
@@ -35,7 +35,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
    * :zap: Governance
       * :x: :full_moon: [:bookmark:KIP_X] TBD
    * :zap: Asset Management
-      * :x: :new_moon: [:bookmark:KIP_X] TBD
+      * :x: :new_moon: [[:bookmark:KIP_61]](kip_61.md) Query Transactions
    * :zap: Node Management
       * :x: :full_moon: [:bookmark:KIP_X] TBD
 
