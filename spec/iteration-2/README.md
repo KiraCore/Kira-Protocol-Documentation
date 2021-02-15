@@ -36,6 +36,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
       * :x: :full_moon: [:bookmark:KIP_X] TBD
    * :zap: Asset Management
       * :x: :new_moon: [[:bookmark:KIP_61]](kip_61.md) Query Transactions
+      * :x: :new_moon: [[:bookmark:KIP_62]](kip_62.md) Query & Manage Proposals 
    * :zap: Node Management
       * :x: :full_moon: [:bookmark:KIP_X] TBD
 
