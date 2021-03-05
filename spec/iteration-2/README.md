@@ -16,6 +16,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
      * :x: :full_moon: [[:bookmark:KIP_52]](kip_52.md) Fee Rewards Distribution
      *  :x: :full_moon: [[:bookmark:KIP_54]](kip_54.md) Uptime Counters, Pausing & Inactivating
      *  :x: :full_moon: [[:bookmark:KIP_55]](kip_55.md) Double-sign Jail & Governance Unjail
+     *  :x: :full_moon: [[:bookmark:KIP_65]](kip_65.md) Upgrade Module & Fork Automation
    * :zap: Governance
      * :x: :full_moon: [[:bookmark:KIP_53]](kip_53.md) Spending Pools
      * :x: :full_moon: [:bookmark:KIP_X] Upgrade Proposal & Revert
