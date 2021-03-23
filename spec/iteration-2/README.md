@@ -27,6 +27,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
 2. :globe_with_meridians: **[REST Server / JSON RPC](../rpc/README.md)**
    * :zap: Queries 
       * :x: :full_moon: [[:bookmark:KIP_60]](kip_60.md) Query Validators
+      * :x: :full_moon: [[:bookmark:KIP_66]](kip_66.md) Nodes Discovery
    * :zap: Availability
       * :x: :new_moon: [:bookmark:KIP_X] TBD
 3. :computer: **User Interface / Deployment**  
