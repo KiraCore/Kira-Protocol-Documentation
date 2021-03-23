@@ -52,6 +52,7 @@ Example of the new `/api/status` query response
       "type": "tendermint/PubKeySecp256k1",
       "value": "AtE7qevMJy0MzFtmWp0wWgUc3eD8sZEpcJYY+XsA1sZM"
     },
+    "moniker": <string>,
     "kira_addr": <string>, // kira address (can be faucet or other key that INTERX owner might want to advertise as his)
     "genesis_checksum": <string>, // SHA256 hash
     "chain_id": <string>, // chain id of the network
@@ -74,6 +75,7 @@ Following information should be gathered from each KIRA node as result of `/node
 "node_list": [ { 
     "id": <string>, // pub_key
     "ip": <string>,
+    "moniker": <string>, 
     "kira_addr": <string>,
     "version": <string>,
     "seed": <bool>,
