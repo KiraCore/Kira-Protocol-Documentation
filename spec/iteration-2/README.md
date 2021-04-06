@@ -34,8 +34,8 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
    * :zap: Security
       * :x: :full_moon: [:bookmark:KIP_56](kip_56.md) SAIFU Login & Tx Signing
       * :x: :full_moon: [:bookmark:KIP_57](kip_57.md) INTERX Signatures Verification
-   * :zap: Governance
-      * :x: :full_moon: [:bookmark:KIP_X] TBD
+   * :zap: Network Explorer
+      * :x: :full_moon: [:bookmark:KIP_67](kip_67.md) Explorer Mode
    * :zap: Asset Management
       * :x: :new_moon: [[:bookmark:KIP_61]](kip_61.md) Query Transactions
       * :x: :new_moon: [[:bookmark:KIP_62]](kip_62.md) Query & Manage Proposals 
