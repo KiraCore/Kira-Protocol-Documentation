@@ -42,7 +42,7 @@ If account is specified then it should be assumed to be validator account and th
 
 If `conskey` is specified then it should be assumed to be validator consensus key and the validator sub-tab with expanded entry showing all details of the particular validator should be shown.
 
-Similarly URL specified `tx` hash, `blocktx` hash and `block` number should result in UI displaying relevant information in the Networking tab.
+Similarly URL specified `tx` hash, `btx` block tx hash and `bnr` block number should result in UI displaying relevant information in the Networking tab.
 
 All interactions with the UI (such as expanding tab of particular validator, block or transaction) should result in changes in the URL allowing user to share the same URL publicly.
 
