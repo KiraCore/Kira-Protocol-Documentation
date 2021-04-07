@@ -59,4 +59,18 @@ v0.0.1
 
 It might happen that old iterations are being worked on in parallel with new iterations, in such case developers working on individual iterations should be keeping the versioning related to their iterations. E.g. push Iteration-1 related changes to `v0.1.Z` and Iteration-2 related changes to `v0.2.Z`.
 
-Code should always be merged with the latest release which is available in the internal Log Book. Developers should never modify branches of other developers as each improvement proposal is aimed to be kept simple and designed for each individual developer to execute on his own. 
+Code should always be merged with the latest release which is available in the internal Log Book. Developers should never modify branches of other developers as each improvement proposal is aimed to be kept simple and designed for each individual developer to execute on his own.
+
+## Releases
+
+For the purpose of releasing and synchronizing work following `3` branches are created:
+
+* `latest` - branch to which all latest stable changes should be merged by all developers to early on minimize any possible future conflicts
+
+* `dev` - a pre-release branch where code should be merged before it's ready to be shipped to testers and/or clients
+
+* `master`/`main` - branches with restricted access require PR
+
+### Releases Workflow
+
+`latest` -> `KIP_X` -> `vX.Y.Z` -> `latest` -> `dev` -PR-> `master`/`main` 
