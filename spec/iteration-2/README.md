@@ -14,9 +14,10 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
 1. :link: **Blockchain Application**
    * :zap: Consensus
      * :x: :full_moon: [[:bookmark:KIP_52]](kip_52.md) Fee Rewards Distribution
-     *  :x: :full_moon: [[:bookmark:KIP_54]](kip_54.md) Uptime Counters, Pausing & Inactivating
+     *  :white_check_mark: :full_moon: [[:bookmark:KIP_54]](kip_54.md) Uptime Counters, Pausing & Inactivating
      *  :x: :full_moon: [[:bookmark:KIP_55]](kip_55.md) Double-sign Jail & Governance Unjail
      *  :x: :full_moon: [[:bookmark:KIP_65]](kip_65.md) Upgrade Module & Fork Automation
+     *  :white_check_mark: :full_moon: [[:bookmark:KIP_68]](kip_68.md) Uptime Counters v2
    * :zap: Governance
      * :x: :full_moon: [[:bookmark:KIP_53]](kip_53.md) Spending Pools
      * :x: :full_moon: [:bookmark:KIP_X] Upgrade Proposal & Revert
