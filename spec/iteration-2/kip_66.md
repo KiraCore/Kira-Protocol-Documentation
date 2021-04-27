@@ -38,9 +38,7 @@ Example content:
 }
 ```
 
-Each `ip` address within the `addrbook.json` is potentially a KIRA node. All IP addresses should be extracted from each addrbook json file for processing.
-
-Each unique (they can repeat) `ip` address in the list ready for processing should be dialed by the `INTERX` via the default INTEREX port `11000` to query chain-id and verify genesis file checksum to ensure that KIRA node is connected to the correct (the same) network. If genesis checksum does not match, chain-id does not match or ip address can't be reached within `3 seconds` then IP should be ignored for the purpose of recursive KIRA nodes discovery using `/node_list` endpoint.
+Each `ip` address and a corresponding `port` within the `addrbook.json` is potentially a KIRA node. All IP addresses should be extracted from each addrbook json file for processing.
 
 Endpoint `/api/status` should be extended with additional fields to contain all essential information's about the KIRA node:
 
@@ -65,30 +63,88 @@ Example of the new `/api/status` query response
 }
 ```
 
-For each discovered `ip` both the `/api/status` and `/node_list` endpoint should be dialed to receive information in regards to the KIRA node as well as list of other KIRA nodes that currently queried adders is connected to. Results of the `/node_list` should be used to recursively expand the `/node_list`.
-
-Following information should be gathered from each KIRA node as result of `/node_list` query:
+Following information should be gathered from each KIRA node as result of `/pub_p2p_list` query:
 
 ```
-"last_update": <integer>, // unix date time
+"last_update": <integer>, // unix date time (start of scan process)
 "scanning": <bool>, // if discovery is still running or not
 "node_list": [ { 
-    "id": <string>, // pub_key
-    "ip": <string>,
-    "moniker": <string>, 
-    "kira_addr": <string>,
-    "version": <string>,
-    "seed": <bool>,
-    "validator": <bool>,
-    "peers": [ { "id": <string>, "ping": <integer> }, .... ]
+    "id": <string>, // pub node_id
+    "ip": <string>, // Public IP address
+    "port": <integer>, // P2P port
+    "ping": <integer>, // time in ms it took to dial P2P and verify P2P node_id
+    "connected": <bool>, // is our node connected to this node
+    "peers": [ <string>, .... ] // list of connected node_id's (connected set to true)
  }, { ... }, ... ]
 ```
 
-First entry in the `/node_list` should always contain information about the localhost. The `ip` of the localhost should be a public IP address if node is not a validator node, otherwise ip should be set to `null` (private). The `peers` property should further only contain list of `id` of nodes that the node is connected to along `ping` as integer in milliseconds defining how long it takes to dial the node. The `seed` property should be set to true if `seed_node_id` is set while `validator` property if `validator_node_id` is known by the INTERX. 
+To identify if IP address is public or a local IP following regex can be used:
 
-We have to also ensure that results of the `/node_list` are visible immediately, property `scanning` will be used to define  if discovery process was finalized and map of the network is complete.
+```
+^([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(?<!172\.(16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31))(?<!127)(?<!^10)(?<!^0)\.([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(?<!192\.168)(?<!172\.(16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31))\.([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(?<!\.255$)(?<!\b255.255.255.0\b)(?<!\b255.255.255.242\b)$
+```
 
-Each entry in the `/node_list` should have unique `id` (INTERX pub_key). The whole Nodes Discovery process should be a periodically re-occurring task (as it can take many minutes or even hours to call all `ip` addresses). The `last_update` property should contain a date time when the discovery process started. Because not every `ip` can be reached from our host the `/node_list` can be expanded with entries from other nodes.
+Following information should be gathered from each KIRA node as result of `/priv_p2p_list` query:
 
-_NOTE: INTERX should have a configurable property allowing for defining maximum number of entries that will be scanned during each discovery process (Default 100'000)_
+```
+"last_update": <integer>, // unix date time (start of scan process)
+"scanning": <bool>, // if discovery is still running or not
+"node_list": [ { 
+    "id": <string>, // priv node_id
+    "ip": <string>, // Local IP address
+    "port": <integer>, // P2P port
+    "ping": <integer>, // time in ms it took to dial P2P and verify P2P node_id
+    "connected": <bool>, // is our node connected to this node
+    "peers": [ <string>, .... ] // list of connected nodes (node_id's)
+ }, { ... }, ... ]
+```
+
+To determine location of INTERX nodes `/pub_p2p_list` of IP addresses should be used. If node is not included in the `pub_p2p_list` then it should NOT be present in the `/interx_list`. 
+
+It is important that `interx_list` only contains verified data. This means that signature of the response from the `/api/status` must be checked.
+
+Following information should be gathered from each KIRA node as the result of `/interx_list` query:
+
+```
+"last_update": <integer>, // unix date time (start of scan process)
+"scanning": <bool>, // if discovery is still running or not
+"node_list": [ { 
+    "id": <string>, // pub_key (INTERX pub_key.value)
+    "ip": <string>, // Public IP address
+    "ping": <integer>, // time in ms it took to dial INTERX and verify pub_key
+    "moniker": <string>, // set in INTERX config
+    "faucet": <string>, // kira addr or null if faucet is not available
+    "type": <string>, // node type set in INTERX config (validator, seed etc)
+    "version": <string> // set in INTERX config
+ }, { ... }, ... ]
+```
+
+To determine location of exposed snapshot nodes `/interx_list` of IP addresses should be used. If node is not included in the `interx_list` or is not exposing a snapshot then it should NOT be present in the `/snap_list`.
+
+INTERX should be expanded with configuration allowing to define location of the snapshot. If the snapshot changes then the SHA256 checksum should be recalculated. It must also be configurable what is the total maximum upload and download speed of the INTERX node so that multiple connecting clients downloading snapshots or other data do NOT cause a DOS attack.
+
+It is important that `snap_list` only contains verified data. This means that signature of the response from the `/api/status` must be checked.
+
+Following information should be gathered from each KIRA node as the result of `/snap_list` query:
+
+```
+"last_update": <integer>, // unix date time (start of scan process)
+"scanning": <bool>, // if discovery is still running or not
+"node_list": [ { 
+    "ip": <string>, // Public IP address
+    "port": <integer>, // INTERX port
+    "size": <string>, // size in Bytes
+    "checksum": <string> // snapshot checksum (SHA256)
+ }, { ... }, ... ]
+```
+
+## Notes
+
+All IP addresses and `id`'s within all lists should be unique. Lists should be ordered by `ping` in ascending order or by `size` in descending order. Nodes that have `connected` flag set to true should have priority in the list.
+
+All lists should be recursively expanded by dialing public IP addresses present in the `interx_list`. 
+
+All list endpoints should have option to only return comma separated list of `ip` addresses without any extra information as well as only list of connected addresses. For example: `/snap_list?connected=true&ip_only=true`
+
+INTERX should have a configurable dial rate limit and a property allowing for defining maximum number of entries within each of the lists (default `8192`).
 
