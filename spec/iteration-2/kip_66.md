@@ -142,6 +142,8 @@ Following information should be gathered from each KIRA node as the result of `/
 
 All IP addresses and `id`'s within all lists should be unique. Lists should be ordered by `ping` in ascending order or by `size` in descending order. Nodes that have `connected` flag set to true should have priority in the list.
 
+Local node should always be a first entry in all of the list (unless it does not expose publicly certain functionalities such as INTERX or snapshot), then followed by other discovered entries. 
+
 All lists should be recursively expanded by dialing public IP addresses present in the `interx_list`. 
 
 All list endpoints should have option to only return comma separated list of `ip` addresses without any extra information as well as only list of connected addresses. For example: `/snap_list?connected=true&ip_only=true`
