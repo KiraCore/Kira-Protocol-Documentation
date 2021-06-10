@@ -25,6 +25,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
      * :x: :full_moon: [[:bookmark:KIP_64]](kip_64.md) Global Transfers Un/Freeze
      * :x: :full_moon: [[:bookmark:KIP_59]](kip_59.md) Double-sign Prevention
      * :white_check_mark: :full_moon: [[:bookmark:KIP_58]](kip_58.md) Priv Validator Key Generator
+     * :x: :full_moon: [[:bookmark:KIP_64]](kip_70.md) Identity Registrar 
 2. :globe_with_meridians: **[REST Server / JSON RPC](../rpc/README.md)**
    * :zap: Queries 
       * :x: :full_moon: [[:bookmark:KIP_60]](kip_60.md) Query Validators
@@ -37,6 +38,7 @@ _NOTE: All OPTIONAL :new_moon: features CAN become the scope of the future itera
       * :x: :full_moon: [:bookmark:KIP_57](kip_57.md) INTERX Signatures Verification
    * :zap: Network Explorer
       * :x: :full_moon: [:bookmark:KIP_67](kip_67.md) Explorer Mode
+      * * :x: :full_moon: [:bookmark:KIP_69](kip_69.md) Network Visualizer
    * :zap: Asset Management
       * :x: :new_moon: [[:bookmark:KIP_61]](kip_61.md) Query Transactions
       * :x: :new_moon: [[:bookmark:KIP_62]](kip_62.md) Query & Manage Proposals 
